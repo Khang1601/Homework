@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bao moi">
+    <title>Báo mới</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <!-- 
+        html: hyper text markup language: ngôn ngữ đánh dấu siêu văn bản
+
+        git: là 1 công cụ quản lý hệ thống phiên bản phân tán
+        repository: kho chứa
+            có 2 kho chứa
+            1. ở máy mình: local
+            2. ở trên git: remote
+--------------------------------------------------------------------------------------------------
+
+        Cách 1:
+        bước 1: tạo repo trên git
+        bước 2: tạo repo trên máy: git init
+        chia làm 3 giai đoạn:
+            gđ1: thư mục đang làm việc
+            gđ2: staging area
+            gđ3: đưa vào kho chứa repo máy mình        
+        bước 3: git add . đưa tất cả các file trong thư mục đang làm việc vào giai đoạn 2
+        --git add index.html git.html        
+        bước 4: đưa vào kho chứa của máy tính mình(commit)
+        bước 5: git remote đến địa chỉ trên remote
+        bước 6: git push -u origin master
+--------------------------------------------------------------------------------------------------
+
+        Cách 2: 
+        Bước 1: tạo repo trên remote
+        Bước 2: git clone "ném địa chỉ https vào"
+        Bước 3: muốn đẩy thư mục nào lên thì ném vào thư mục vừa clone về
+        Bước 4: git add .                           thêm toàn bộ file
+        bước 5: git commit -m "noi dung"            lưu thay đổi vào repo trong máy
+        bước 6: git push
+--------------------------------------------------------------------------------------------------
+        git init: tạo repo trên máy
+        git clone: lấy từ trên mạng về
+        git pull: đồng bộ trên mạng về máy
+
+        git add và git add .
+        git commit
+        git push: đồng bộ từ máy lên repo trên mạng
+
+        git log
+        git status: check trạng thái của những file bạn đã thay đổi trong thư mục làm việc
+
+===================================================================================================
+
+        Cấu trúc 1 trang html:
+        gồm các phần:
+        phần 1: doctype : nói về phiên bản của html
+        phần 2: html
+            -head:
+                +meta: charset: định dạng phông chữ kiểu chữ
+                +meta name="viewport": reponsive
+                +SEO: tối ưu công cụ tìm kiếm
+            -body:
+                +chứa nội dung trang web
+        Các thẻ trong html hay dùng
+            -thẻ Block
+                +nó chiếm hết chiều ngang của trình duyệt
+                +có thể set width, height, margin, padding 4 chiều
+            -những thẻ block
+                +div    : thẻ khu vực 
+                +h1-h6  : thẻ tiêu đề : 1 trang web nên để 1 thẻ h1 và nội dung h1 ko quá 72 kí tự
+                +p      : thẻ paragrap : thẻ đánh dấu nội dung đoạn văn
+                +ul-li  : thẻ danh sách sắp xếp ko theo thứ tự : unorderlist
+                +ol-li  : sắp xếp theo thứ tự order-list
+                +header : hiển thị phần đầu của trang web
+                +nav    : navigation : thanh điều hướng
+                +main   : chứa nội dung chính của trang
+                +section: thẻ khu vực
+                +article: chứa nội dung chính riêng biệt
+                +aside  : thường bổ nghĩa cho article or chứa nội dung quảng cáo
+                +footer : chân trang : contact, địa chỉ, sdt liên hệ
+
+            -thẻ Inline
+                +chiếm hết nội dung nằm trên cùng 1 hàng
+                +không set dc width, height
+            -những thẻ inline
+                +span   
+                +button : tạo nút bấm
+                +input  
+                +img    
+                +a
+                +label
+                +video
+
+            -thẻ inline-block
+                +về mặt hiển thị thì hiển thị theo dạng inline
+                +về mặt chức năng width height theo dạng block
+     -->
+    <h1 style="background-color: red;">xin chào</h1>
+
+    <p style="background-color: red;">đây là thẻ block</p>
+    <p style="background-color: gold">đây là thẻ block</p>
+
+    <span style="background-color:  green;">đây là thẻ inline</span>
+    <span style="background-color: blue;">đây là thẻ inline</span>
+
+    <!-- ./images/
+         ../../
+    -->
+     <img src="" alt="">
+
+
+    <body>
+        <header>
+            <!-- thường chứa logo -->
+            <nav></nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <aside>
+
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+            </section>
+
+            <section>
+
+            </section>
+        </main>
+        <footer>
+            <!-- chân trang -->
+        </footer>
+    </body>
+</body>
+</html>
